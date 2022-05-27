@@ -18,6 +18,7 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.databinding.DataBindingUtil
 import com.example.sticker2d.databinding.ActivityMainBinding
+import com.google.mlkit.vision.face.FaceDetectorOptions
 import java.text.SimpleDateFormat
 import java.util.*
 import java.util.concurrent.Executor
@@ -43,6 +44,10 @@ class MainActivity : AppCompatActivity() {
         binding.btnTake.setOnClickListener {
             takePhoto()
         }
+
+        val realTimeOpts = FaceDetectorOptions.Builder()
+            .setContourMode(FaceDetectorOptions.CONTOUR_MODE_ALL)
+            .build()
 
     }
 
