@@ -36,7 +36,7 @@ class CameraManager(
     }
 
     private fun createNewExecutor() {
-        cameraExecutorService = Executors.newSingleThreadExecutor()
+            cameraExecutorService = Executors.newSingleThreadExecutor()
     }
 
     fun startCamera() {
