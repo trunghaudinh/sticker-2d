@@ -14,3 +14,6 @@ dependencyResolutionManagement {
 }
 rootProject.name = "sticker2d"
 include ':app'
+
+include ':libCameraX'
+project(':libCameraX').projectDir = new File(settingsDir, '../BazookaLibs/libCameraX')
